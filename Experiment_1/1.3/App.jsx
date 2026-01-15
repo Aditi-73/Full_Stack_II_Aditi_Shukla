@@ -31,7 +31,7 @@ function ThemeToggle() {
   return (
     <div
       style={{
-        minHeight: "100vh",
+        minHeight: "92vh",
         backgroundColor: currentTheme.backgroundColor,
         color: currentTheme.color,
         transition: "all 0.3s ease",
@@ -95,28 +95,9 @@ function ThemeToggle() {
           gap: "20px",
         }}
       >
-        {[1, 2, 3].map((num) => (
-          <div
-            key={num}
-            style={{
-              width: "120px",
-              height: "120px",
-              backgroundColor: currentTheme.cardBg,
-              border: `2px solid ${currentTheme.border}`,
-              borderRadius: "10px",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              fontSize: "2rem",
-              fontWeight: "bold",
-              transition: "all 0.3s ease",
-            }}
-          >
-            {num}
-          </div>
-        ))}
+        
+        </div>
       </div>
-    </div>
   );
 }
 
