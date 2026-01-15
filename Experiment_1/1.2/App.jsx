@@ -42,7 +42,7 @@ function TodoList() {
           type="text"
           value={inputValue}
           onChange={(e) => setInputValue(e.target.value)}
-          onKeyPress={(e) => e.key === "Enter" && addTask()}
+          onKeyDown={(e) => e.key === "Enter" && addTask()}
           placeholder="Enter a task..."
           style={{
             flex: 1,
