@@ -1,0 +1,15 @@
+.app-shell {
+  min-height: 100vh;
+}
+
+.card-shadow {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+}
+
+.btn-primary {
+  @apply bg-indigo-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:bg-indigo-700 transition;
+}
+
+.btn-secondary {
+  @apply bg-gray-200 text-gray-800 font-semibold px-4 py-2 rounded-lg shadow hover:bg-gray-300 transition;
+}
