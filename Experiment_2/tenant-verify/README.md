@@ -126,6 +126,14 @@ It does not connect to real police databases or blockchain networks.
 
 All verification data is mocked.
 
+💡Screenshots:
+![alt text](ss/1.png)
+![alt text](ss/2.png)
+![alt text](ss/3.png)
+![alt text](ss/4.png)
+![alt text](ss/5.png)
+![alt text](ss/6.png)
+
 🚀 Future Enhancements
 
 * Backend integration (Node.js / Spring Boot)
