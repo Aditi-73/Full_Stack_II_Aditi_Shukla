@@ -1,0 +1,73 @@
+.app-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+nav {
+  background-color: #0d2818;
+  padding: 15px 0;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: #e8f5e9;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  padding: 8px 15px;
+  border-radius: 5px;
+}
+
+nav a:hover {
+  color: #ffffff;
+  background-color: #2d6a3e;
+  transform: scale(1.05);
+}
+
+.page-content {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  border-top: 5px solid #2d6a3e;
+}
+
+h1 {
+  color: #1a472a;
+  margin-top: 0;
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: #2d6a3e;
+  font-size: 24px;
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+p {
+  color: #333333;
+  line-height: 1.8;
+  font-size: 16px;
+}
+
+ul li {
+  color: #333333;
+  line-height: 1.8;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
