@@ -44,6 +44,7 @@ Open the URL shown by Vite in your browser.
 ![alt text](public/ss/2.png)
 ![alt text](public/ss/3.png)
 ![alt text](public/ss/4.png)
+![alt text](public/ss/5.png)
 
 # React + Vite
 
