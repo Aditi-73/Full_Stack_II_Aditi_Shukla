@@ -1,0 +1,9 @@
+.redux-root { min-height: 100vh; display:flex; align-items:center; justify-content:center; background: linear-gradient(135deg,#dff6f0 0%, #cfe7ff 50%, #e9d5ff 100%); }
+.counter-card { background: #ffffff; padding:28px; border-radius:12px; box-shadow:0 10px 30px rgba(2,6,23,0.06); text-align:center; width:320px; }
+.title { margin:0 0 12px 0; font-family: Inter, Arial, sans-serif; color:#111827; }
+.value { font-size:48px; font-weight:700; margin:12px 0; color:#0f172a; }
+.controls { display:flex; gap:10px; justify-content:center; margin-top:16px; }
+.btn { padding:8px 14px; border-radius:8px; border:none; cursor:pointer; font-weight:600; }
+.increment { background:#10b981; color:#fff; }
+.decrement { background:#ef4444; color:#fff; }
+.reset { background:transparent; border:1px solid #e5e7eb; color:#374151; }
