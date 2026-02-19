@@ -37,6 +37,10 @@ npm run dev
 ```
 
 Open the URL shown by Vite in your browser.
+
+## Screenshot
+
+![App screenshot](assets/screenshot-1.svg)
 ⚡ React Lazy Loading Demo (Experiment-5)
 Optimizing frontend performance using React.lazy() and Suspense in a React Single Page Application.
 
@@ -93,5 +97,5 @@ Improving frontend performance
 Optimizing SPA architecture
 
 ⚡Screenshots
-![alt text](image.png)
-![alt text](image-1.png)
+![alt text](public/ss/image-1.png)
+![alt text](public/ss/image.png)

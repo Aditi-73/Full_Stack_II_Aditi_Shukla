@@ -37,6 +37,14 @@ npm run dev
 ```
 
 Open the URL shown by Vite in your browser.
+
+## Screenshot
+
+![alt text](public/ss/1.png)
+![alt text](public/ss/2.png)
+![alt text](public/ss/3.png)
+![alt text](public/ss/4.png)
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
