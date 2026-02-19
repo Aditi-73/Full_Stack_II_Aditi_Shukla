@@ -1,3 +1,42 @@
+# Experiment 5.2: Small App — Form & State
+
+## Aim
+
+To build a small React form-driven application that captures user input and displays it; practice controlled components and basic local state.
+
+## Software Requirements
+
+- Node.js
+- React
+- Code Editor (VS Code)
+- Web Browser
+
+## Theory
+
+Controlled components in React keep form element values in state, making it easier to validate, submit, or preview input. This experiment practices wiring inputs to state and rendering results.
+
+## Procedure
+
+1. Create a form component with inputs (text, email, textarea).
+2. Manage input values with `useState` and controlled inputs.
+3. Validate basic rules (required fields, simple format).
+4. On submit, render a preview card showing the submitted values.
+
+## What to deliver
+
+- `App.jsx` with a working form, validation and preview.
+- `index.css` with simple styles for form and preview.
+- README with run steps (this file).
+
+## Run
+
+```bash
+cd Experiment_5/5.2
+npm install
+npm run dev
+```
+
+Open the URL shown by Vite in your browser.
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.

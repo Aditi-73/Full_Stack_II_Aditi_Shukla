@@ -1,3 +1,42 @@
+# Experiment 5.1: UI Component Practice
+
+## Aim
+
+To practice building simple, reusable React UI components and apply basic styling.
+
+## Software Requirements
+
+- Node.js
+- React
+- Code Editor (VS Code)
+- Web Browser
+
+## Theory
+
+Small, focused components improve reusability and readability. This experiment focuses on creating presentational components (buttons, cards, headers) and composing them into a small UI.
+
+## Procedure
+
+1. Create a new React component for each UI element (Button, Card, Header).
+2. Add simple props to customize text and styles.
+3. Compose components inside `App.jsx` to form a small page.
+4. Use CSS (or CSS modules) for basic layout and responsive spacing.
+
+## What to deliver
+
+- `App.jsx` demonstrating composed components.
+- A small stylesheet (e.g. `index.css`) with consistent spacing, colors and typography.
+- Short README with run steps (this file).
+
+## Run
+
+```bash
+cd Experiment_5/5.1
+npm install
+npm run dev
+```
+
+Open the URL shown by Vite in your browser.
 ⚡ React Lazy Loading Demo (Experiment-5)
 Optimizing frontend performance using React.lazy() and Suspense in a React Single Page Application.
 
