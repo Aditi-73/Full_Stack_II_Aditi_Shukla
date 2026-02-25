@@ -1,6 +1,8 @@
 import React, { createContext, useContext, useState, useEffect } from "react";
 import { createRoot } from "react-dom/client";
 import "./index.css";
+import lightBackground from "./BG/1.png";
+import darkBackground from "./BG/2.png";
 
 const ThemeContext = createContext();
 
@@ -29,28 +31,15 @@ function ThemeProvider({ children }) {
     );
     }
 
-    function SampleCard() {
-    return (
-        <div className="card">
-        <h2>Preview Area</h2>
-        <p>This area shows how the current theme affects UI elements.</p>
-        <button className="primary">Primary Action</button>
-        <button className="secondary">Secondary Action</button>
-        </div>
-    );
-    }
-
     function App() {
+    const { theme } = useContext(ThemeContext);
+    const backgroundImage = theme === "light" ? lightBackground : darkBackground;
+
     return (
-        <div className="app-root">
-        <header className="header">
-            <h1>Theme Toggle (React Context)</h1>
+        <div className="app-root" style={{ "--bg-image": `url(${backgroundImage})` }}>
+        <main className="center-screen">
             <ThemeToggle />
-        </header>
-        <main>
-            <SampleCard />
         </main>
-        <footer className="footer">Simple theme switcher for beginners</footer>
         </div>
     );
     }

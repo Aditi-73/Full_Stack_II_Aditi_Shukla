@@ -1,41 +1,50 @@
-# Experiment-2: State Management Using Redux (Counter Application)
+# Experiment 4.2 - Redux Counter Application
 
-## Aim
+## Overview
 
-To implement centralized state management using Redux in a React application.
+This project demonstrates centralized state management using Redux Toolkit in a React + Vite app.
 
-## Software Requirements
+- Global counter state is stored in a Redux store.
+- `increment`, `decrement`, and `reset` actions update the counter value.
+- UI uses `useSelector` to read state and `useDispatch` to trigger actions.
 
-- Node.js
-- React
-- Redux Toolkit
+## About Redux
 
-## Theory
+Redux is a predictable state management library for JavaScript applications.
 
-Redux is a predictable state container for JavaScript applications. It stores the application state in a single global store and updates it using actions and reducers. Redux Toolkit simplifies Redux implementation by reducing boilerplate code.
+- **Store**: A single centralized object that holds app state.
+- **Action**: A plain object that describes what happened (for example, increment counter).
+- **Reducer**: A function that receives current state + action and returns updated state.
+- **Dispatch**: The method used to send actions to the store.
 
-## Procedure
+In this project, Redux helps keep counter logic centralized and easy to scale when the app grows. Redux Toolkit is used to reduce boilerplate and make reducers/actions cleaner.
 
-1. Install Redux Toolkit and React-Redux.
-2. Create a Redux store.
-3. Define a slice with actions and reducers.
-4. Provide the store to the application.
-5. Access and update state using hooks.
+## Files
 
-## What I added
+- `App.jsx` - Counter UI and Redux hooks integration
+- `store.js` - Redux Toolkit slice, actions, and store configuration
+- `index.css` - Styling for the counter card and action buttons
+- `ss/` - Output screenshots
 
-- A beginner-friendly Redux counter in `App.jsx` using `@reduxjs/toolkit` and `react-redux`.
-- Simple styles in `index.css` with improved buttons and layout.
-- A `reset` action to reset the counter to zero.
+## Screenshots
 
-## Run
+### Screenshot 1
 
-Install dependencies and start the dev server:
+![Redux Counter Screenshot 1](./ss/1.png)
+
+### Screenshot 2
+
+![Redux Counter Screenshot 2](./ss/2.png)
+
+## How to Run
 
 ```bash
-cd Experiment_4/4.2
 npm install
 npm run dev
 ```
 
-Open http://localhost:5174/ (or the port shown by Vite).
+## Build
+
+```bash
+npm run build
+```

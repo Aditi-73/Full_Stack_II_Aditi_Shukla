@@ -12,10 +12,6 @@
     --bg: #0f172a;
         --bg-gradient: radial-gradient(circle at 10% 10%, #0b1220 0%, #071028 40%, #071028 100%);
         --text: #e6eef8;
-    --card: #0b1220;
-    --primary: #60a5fa;
-    --primary-text: #0b1220;
-    --secondary-text:white;
     --muted: #9ca3af;
     }
 
@@ -28,17 +24,32 @@
     color: var(--text);
     }
 
-    .app-root { min-height: 100vh; display:flex; flex-direction:column; }
-    .header { display:flex; align-items:center; justify-content:space-between; padding:20px 24px; border-bottom:1px solid rgba(0,0,0,0.04); }
-    .header h1 { margin:0; font-size:1.25rem; }
+    .app-root {
+    min-height: 100vh;
+    background-image: var(--bg-image);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    }
 
-    .toggle { background:transparent; border:1px solid var(--muted); padding:8px 12px; border-radius:8px; cursor:pointer; color:var(--text); }
+    .center-screen {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
 
-    main { flex:1; display:flex; align-items:center; justify-content:center; padding:32px; }
-    .card { background:var(--card); padding:24px; border-radius:12px; max-width:520px; width:100%; box-shadow: 0 6px 18px rgba(2,6,23,0.08); }
-    .card h2 { margin-top:0; }
-    .card p { color:var(--muted); }
-    .primary { background:var(--primary); color:var(--primary-text); border:none; padding:8px 12px; border-radius:8px; cursor:pointer; margin-right:8px; }
-    .secondary { background:transparent;color:var(--secondary-text); border:1px solid rgba(0,0,0,0.08); padding:8px 12px; border-radius:8px; cursor:pointer; }
+    .toggle {
+    background: transparent;
+    border: 2px solid var(--muted);
+    padding: 18px 28px;
+    border-radius: 14px;
+    cursor: pointer;
+    color: var(--text);
+    font-size: 1.35rem;
+    font-weight: 600;
+    }
 
-    .footer { text-align:center; padding:12px 0; color:var(--muted); font-size:0.9rem; }
+    [data-theme="dark"] .toggle {
+    color: #000000;
+    }
