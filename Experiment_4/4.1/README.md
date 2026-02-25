@@ -20,11 +20,11 @@ The toggle changes the theme globally using React Context API.
 
 ### Light Theme
 
-![Light Theme](./ss/Light.png)
+![alt text](ss/Light.png)
 
 ### Dark Theme
 
-![Dark Theme](./ss/Dark.png)
+![alt text](ss/Dark.png)
 
 ## How to Run
 
