@@ -89,6 +89,57 @@ select {
   height: 20px;
 }
 
+.radio-group {
+  border: 1px solid #245047;
+  border-radius: 10px;
+  padding: 10px 14px 14px;
+  margin: 0;
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.radio-group legend {
+  color: #132f33;
+  font-size: 1.15rem;
+  padding: 0 6px;
+}
+
+.radio-option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #132f33;
+  font-size: 1.1rem;
+}
+
+.radio-option input {
+  width: 18px;
+  height: 18px;
+}
+
+.skills-group {
+  border: 1px solid #245047;
+  border-radius: 10px;
+  padding: 10px 14px 14px;
+  margin: 0;
+}
+
+.skills-group legend {
+  color: #132f33;
+  font-size: 1.15rem;
+  padding: 0 6px;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+.actions button {
+  flex: 1;
+}
+
 button {
   padding: 14px 18px;
   border: none;

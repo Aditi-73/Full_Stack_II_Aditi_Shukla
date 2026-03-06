@@ -39,6 +39,14 @@ Controlled components are React components in which form data is handled by the 
 
 ![Experiment 6.1 Screenshot 2](./ss/2.png)
 
+### Screenshot 3
+
+![Experiment 6.1 Screenshot 3](./ss/3.png)
+
+### Screenshot 4
+
+![Experiment 6.1 Screenshot 4](./ss/4.png)
+
 ## Run
 
 ```bash
