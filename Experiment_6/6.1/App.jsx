@@ -3,6 +3,8 @@ import { createRoot } from "react-dom/client";
 import "./index.css";
 
 function ControlledForm() {
+  const todayDate = new Date().toISOString().split("T")[0];
+
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -34,6 +36,12 @@ function ControlledForm() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
+
+    if (formData.dob > todayDate) {
+      alert("DOB cannot be a future date.");
+      return;
+    }
+
     setSubmittedData(formData);
     alert("Form submitted successfully!");
   };
@@ -83,7 +91,14 @@ function ControlledForm() {
 
           <label>
             DOB
-            <input type="date" name="dob" value={formData.dob} onChange={handleChange} required />
+            <input
+              type="date"
+              name="dob"
+              value={formData.dob}
+              onChange={handleChange}
+              max={todayDate}
+              required
+            />
           </label>
 
           <fieldset className="radio-group">
