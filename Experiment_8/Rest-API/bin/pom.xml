@@ -8,7 +8,7 @@
 		<version>4.0.3</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.AML2A</groupId>
+	<groupId>com.AML2B</groupId>
 	<artifactId>Rest-API</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>Rest-API</name>
