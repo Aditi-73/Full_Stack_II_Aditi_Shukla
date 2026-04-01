@@ -78,14 +78,13 @@ The application will start on `http://localhost:8080`
 ## Screenshots
 
 ### Eclipse IDE - Application Running
-<img width="1343" height="581" alt="1" src="https://github.com/user-attachments/assets/4c497ad3-d9fe-4254-ac68-0b1616ab087a" />
+![Full_Stack_II_Aditi_Shukla/Experiment_9/Eclipse.jpeg](Eclipse.jpeg)
 
 ### Login Page
-<img width="874" height="492" alt="2" src="https://github.com/user-attachments/assets/d033abf3-0568-4525-a2e5-67a1c36b5ec2" />
+![Full_Stack_II_Aditi_Shukla/Experiment_9/POST.png](POST.png)
 
 ### Welcome Page
-
-<img width="870" height="543" alt="3" src="https://github.com/user-attachments/assets/42315ae1-3129-403a-9eb1-5201245fd28e" />
+![alt text](GET.png)
 
 ## API Endpoints
 
