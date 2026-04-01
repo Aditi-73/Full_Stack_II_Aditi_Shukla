@@ -22,7 +22,7 @@ This project is a comprehensive authentication demo built with Spring Boot that 
 
 ```
 src/
-├── main/java/com/AML2A/JWT_DEMO/
+├── main/java/com/AML2B/JWT_DEMO/
 │   ├── JwtDemoApplication.java       # Main application entry point
 │   ├── Config/
 │   │   └── SecurityConfig.java       # Spring Security configuration
