@@ -1,4 +1,4 @@
-package com.AML2A.Rest_API;
+package com.AML2B.Rest_API;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

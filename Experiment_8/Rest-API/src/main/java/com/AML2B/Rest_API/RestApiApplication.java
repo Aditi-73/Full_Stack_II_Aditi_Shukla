@@ -1,4 +1,4 @@
-package com.AML2A.Rest_API;
+package com.AML2B.Rest_API;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

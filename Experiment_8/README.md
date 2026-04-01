@@ -17,7 +17,7 @@ This experiment demonstrates the development of a RESTful API using Spring Boot.
 - Maven installed for building the project
 
 ## Project Structure
-- `src/main/java/com/AML2A/Rest_API/RestApiApplication.java`: Main Spring Boot application class
+- `src/main/java/com/AML2B/Rest_API/RestApiApplication.java`: Main Spring Boot application class
 - `controller/StudentController.java`: REST controller handling HTTP requests
 - `service/StudentService.java`: Service layer containing business logic
 - `repository/StudentRepository.java`: JPA repository for data access
