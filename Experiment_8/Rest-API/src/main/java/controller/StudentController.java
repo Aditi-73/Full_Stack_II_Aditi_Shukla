@@ -3,6 +3,7 @@ package controller;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -17,12 +18,13 @@ import service.StudentService;
 
 @RestController
 @RequestMapping("/api/students")
+@CrossOrigin(origins = "http://localhost:5173/")
 public class StudentController {
 	
 	@Autowired
     private StudentService service;
 
-    @GetMapping
+    @GetMapping("/get-all")
     public List<Student> getStudents() {
         return service.getAllStudents();
     }
@@ -32,7 +34,7 @@ public class StudentController {
     	return service.getStudentById(id);
     }
 
-    @PostMapping
+    @PostMapping("/add-student")
     public Student addStudent(@RequestBody Student student) {
         return service.saveStudent(student);
     }

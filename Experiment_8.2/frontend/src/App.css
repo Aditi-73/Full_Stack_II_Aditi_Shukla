@@ -1,0 +1,348 @@
+.cyber-shell {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+  padding: 2rem 3rem 3rem;
+  color: #d7f5ff;
+}
+
+.bg-gradient,
+.bg-grid,
+.scanline {
+  pointer-events: none;
+  position: absolute;
+  inset: 0;
+}
+
+.bg-gradient {
+  background:
+    radial-gradient(circle at 20% 20%, rgba(255, 18, 176, 0.34), transparent 40%),
+    radial-gradient(circle at 85% 15%, rgba(32, 232, 255, 0.28), transparent 36%),
+    radial-gradient(circle at 55% 88%, rgba(58, 255, 150, 0.2), transparent 42%);
+  animation: pulseGlow 9s ease-in-out infinite;
+}
+
+.bg-grid {
+  background-image:
+    linear-gradient(rgba(68, 247, 255, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(68, 247, 255, 0.08) 1px, transparent 1px);
+  background-size: 28px 28px;
+  mask-image: radial-gradient(ellipse at center, #000 35%, transparent 82%);
+}
+
+.scanline {
+  background: linear-gradient(180deg, transparent, rgba(255, 255, 255, 0.06), transparent);
+  animation: scanMove 5s linear infinite;
+  mix-blend-mode: screen;
+}
+
+.hero-panel,
+.panel {
+  position: relative;
+  z-index: 1;
+  max-width: 1760px;
+  margin-inline: auto;
+  border: 1px solid rgba(103, 251, 255, 0.3);
+  background: linear-gradient(145deg, rgba(8, 15, 45, 0.72), rgba(4, 6, 20, 0.62));
+  backdrop-filter: blur(6px);
+  box-shadow:
+    0 0 0 1px rgba(255, 20, 198, 0.22) inset,
+    0 0 28px rgba(34, 234, 255, 0.26),
+    0 0 60px rgba(255, 20, 198, 0.18);
+}
+
+.hero-panel {
+  padding: 2.6rem 2.9rem;
+  margin-bottom: 1.2rem;
+}
+
+.kicker {
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  font-size: 0.72rem;
+  color: #70f7ff;
+}
+
+.hero-panel h1 {
+  margin: 0.4rem 0;
+  font-size: clamp(2.6rem, 6vw, 4.6rem);
+  line-height: 1.1;
+}
+
+.hero-panel h1 span {
+  color: #ff4bd1;
+  text-shadow: 0 0 16px rgba(255, 75, 209, 0.7);
+}
+
+.tagline {
+  margin: 0;
+  font-size: 1.08rem;
+  color: rgba(215, 245, 255, 0.8);
+}
+
+.content-grid {
+  position: relative;
+  z-index: 1;
+  max-width: 1760px;
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.2rem;
+}
+
+.panel {
+  padding: 3rem;
+  min-height: 1040px;
+}
+
+.panel h2 {
+  margin-top: 0;
+  color: #8ff9ff;
+  letter-spacing: 0.03em;
+  font-size: clamp(1.8rem, 2.8vw, 2.6rem);
+}
+
+.student-form {
+  display: grid;
+  gap: 1rem;
+}
+
+.form-actions,
+.card-actions {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.student-form label {
+  display: grid;
+  gap: 0.4rem;
+}
+
+.student-form label span {
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: rgba(143, 249, 255, 0.95);
+}
+
+.student-form input {
+  font-family: "Orbitron", "Rajdhani", sans-serif;
+  font-size: 1.08rem;
+  letter-spacing: 0.03em;
+  border: 1px solid rgba(143, 249, 255, 0.35);
+  background: rgba(4, 10, 30, 0.85);
+  color: #f4feff;
+  border-radius: 0.35rem;
+  padding: 1.1rem 1.1rem;
+  outline: none;
+  transition: 180ms ease;
+}
+
+.student-form input::placeholder {
+  color: rgba(215, 245, 255, 0.45);
+}
+
+.student-form input:focus {
+  border-color: #ff3bc8;
+  box-shadow: 0 0 0 3px rgba(255, 59, 200, 0.24);
+}
+
+.student-form button {
+  font-size: 1.08rem;
+  margin-top: 0.2rem;
+  border: 1px solid rgba(255, 53, 214, 0.65);
+  border-radius: 0.4rem;
+  background: linear-gradient(90deg, #ff2fc5, #2ce6ff 78%);
+  color: #10122a;
+  padding: 1.08rem 1.1rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: transform 150ms ease, box-shadow 200ms ease;
+}
+
+.student-form button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 0 18px rgba(80, 238, 255, 0.6);
+}
+
+.student-form button:active {
+  transform: translateY(1px);
+}
+
+.secondary-button,
+.edit-button,
+.delete-button {
+  font-size: 1rem;
+  padding: 0.94rem 1rem;
+  border-radius: 0.4rem;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: transform 150ms ease, box-shadow 200ms ease, border-color 200ms ease;
+}
+
+.secondary-button {
+  background: rgba(8, 15, 45, 0.85);
+  color: #d7f5ff;
+  border-color: rgba(143, 249, 255, 0.35);
+}
+
+.edit-button {
+  background: linear-gradient(90deg, rgba(44, 230, 255, 0.9), rgba(255, 47, 197, 0.72));
+  color: #10122a;
+}
+
+.delete-button {
+  background: rgba(255, 48, 112, 0.12);
+  color: #ff7aa8;
+  border-color: rgba(255, 48, 112, 0.45);
+}
+
+.secondary-button:hover,
+.edit-button:hover,
+.delete-button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 0 18px rgba(80, 238, 255, 0.18);
+}
+
+.student-card .card-actions {
+  margin-top: 1rem;
+}
+
+.list-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 0.8rem;
+}
+
+.list-head p {
+  margin: 0;
+  color: rgba(220, 245, 255, 0.7);
+  font-size: 0.98rem;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.empty {
+  margin: 0;
+  color: rgba(220, 245, 255, 0.66);
+}
+
+.student-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+  gap: 1.2rem;
+}
+
+.student-card {
+  border: 1px solid rgba(116, 255, 248, 0.34);
+  border-left: 4px solid #ff3bc8;
+  border-radius: 0.5rem;
+  background: linear-gradient(180deg, rgba(14, 26, 62, 0.88), rgba(10, 15, 45, 0.92));
+  min-height: 220px;
+  padding: 1.45rem;
+  animation: cardIn 420ms ease both;
+}
+
+.student-name {
+  margin: 0;
+  color: #fef4ff;
+  font-size: 1.45rem;
+  font-weight: 600;
+}
+
+.meta,
+.course {
+  margin: 0.5rem 0 0;
+  font-size: 1.05rem;
+  color: rgba(205, 247, 255, 0.88);
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(14px);
+  animation: riseIn 700ms ease forwards;
+}
+
+.rise-1 {
+  animation-delay: 70ms;
+}
+
+.rise-2 {
+  animation-delay: 180ms;
+}
+
+.rise-3 {
+  animation-delay: 300ms;
+}
+
+@keyframes riseIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes cardIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px) scale(0.98);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes pulseGlow {
+  0%,
+  100% {
+    filter: saturate(100%);
+  }
+
+  50% {
+    filter: saturate(132%);
+  }
+}
+
+@keyframes scanMove {
+  from {
+    transform: translateY(-100%);
+  }
+
+  to {
+    transform: translateY(100%);
+  }
+}
+
+@media (min-width: 900px) {
+  .content-grid {
+    grid-template-columns: 1fr 1.6fr; /* right side bigger */
+    gap: 2rem;
+  }
+}
+
+  .panel {
+    min-height: 100%;
+    padding: 3.5rem;
+  }
+
+@media (prefers-reduced-motion: reduce) {
+  .scanline,
+  .bg-gradient,
+  .reveal,
+  .student-card {
+    animation: none;
+  }
+
+  .reveal {
+    opacity: 1;
+    transform: none;
+  }
+}
