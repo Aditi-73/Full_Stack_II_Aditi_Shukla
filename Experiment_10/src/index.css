@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&family=Quicksand:wght@400;500;700&display=swap");
+
+:root {
+  --sand: #f4e7d1;
+  --clay: #c06c4f;
+  --terra: #8e4a33;
+  --olive: #70815d;
+  --ink: #2d201b;
+  --card: rgba(255, 247, 235, 0.84);
+  --line: rgba(141, 88, 65, 0.35);
+
+  font-family: "Quicksand", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  color: var(--ink);
+  background:
+    radial-gradient(circle at 10% 20%, #f8dec0 0%, transparent 45%),
+    radial-gradient(circle at 85% 80%, #e7b28c 0%, transparent 50%),
+    linear-gradient(160deg, #f3e3cc 0%, #e8cfad 42%, #dcb48f 100%);
+  overflow-x: hidden;
+}
+
+body::before,
+body::after {
+  content: "";
+  position: fixed;
+  border-radius: 999px;
+  z-index: -1;
+  opacity: 0.28;
+}
+
+body::before {
+  width: 46vw;
+  height: 46vw;
+  right: -12vw;
+  top: -10vw;
+  background: radial-gradient(circle, #a95c42 0%, transparent 70%);
+}
+
+body::after {
+  width: 36vw;
+  height: 36vw;
+  left: -10vw;
+  bottom: -8vw;
+  background: radial-gradient(circle, #6f8058 0%, transparent 70%);
+}
+
+#root {
+  width: 100%;
+}
